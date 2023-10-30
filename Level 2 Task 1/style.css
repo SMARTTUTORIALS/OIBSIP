@@ -1,0 +1,47 @@
+.app
+{
+    width: 460px !important;
+    background-color: whitesmoke;   
+}
+
+#input-expression{
+    min-height: 2rem;
+}
+
+#input-expression, #result {
+    overflow: auto; /* Enable horizontal scrolling */
+    -ms-overflow-style: none; /* Hide the scrollbar in Internet Explorer */
+    scrollbar-width: none; /* Hide the scrollbar in Firefox */
+}
+
+
+#input-expression::-webkit-scrollbar, #result::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+.btn-enter{
+    background-color: #6d4c41;
+    color: azure;
+    font-weight: 500;
+}
+
+.bg-brown-subtle{
+    background-color: #d7ccc8;
+}
+
+.text-brown-emphasis{
+    color: #3e2723;
+}
+
+.btn-nmbr{
+    background-color: #efebe9;
+}
+
+.btn-oprtr, .btn-custom{
+    background-color: #bcaaa4;
+    color: #3e2723;
+}
+
+.btn:hover{
+    border-color: #6d4c41;
+}
