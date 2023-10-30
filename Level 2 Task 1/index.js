@@ -114,9 +114,11 @@ function ansButtonHandler(){
 function calculateResult() {
     let exp = expression.innerHTML.toString();
     try {
-        exp = convertToMathExpression(exp)
+        exp = convertToMathExpression(exp);
+        console.log(exp);
         let res= math.evaluate(exp);
         ans = res;
+        
         result.innerHTML = res;
     } catch (error) {
         result.innerHTML = "Invalid Expression";
@@ -150,6 +152,7 @@ function parseSqrt(inputExpression) {
     let insideSqrt = false;
 
     for (let i = 0; i < inputExpression.length; i++) {
+       
         if (inputExpression[i] === '√') {
             if (!insideSqrt) {
                 outputExpression += 'sqrt(';
